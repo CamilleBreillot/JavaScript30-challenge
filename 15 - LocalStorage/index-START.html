@@ -58,7 +58,7 @@
   }
 
   function toggleDone(e) { // persist checked state
-    if(!e.target.matches("input")) return ; // skip unless it is an input
+    if(!e.target.matches("input")) return ; // skip unless it is an input - event delegation
     const element = e.target;
     const index = element.dataset.index;
     items[index].done = !items[index].done; //change property
